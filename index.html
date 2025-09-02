@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Newsletter - Xdinary Heroes</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media-queries.css" />
+    <link
+      rel="shortcut icon"
+      href="/images/favicon-xdinary.png"
+      type="image/x-icon"
+    />
+  </head>
+
+  <body>
+    <header>
+      <h1 id="title">
+        <span class="highlight">✦ XDINARY HEROES</span> - NEWSLETTER ✦
+      </h1>
+    </header>
+
+    <main>
+      <div class="form-container">
+        <div class="cover-image">
+          <img
+            src="/images/xdinary-heroes.png"
+            alt="Xdinary Heroes"
+            class="form-image"
+          />
+        </div>
+
+        <form id="form">
+          <p class="paragraph">
+            Inscreva-se e receba todas as novidades, conteúdos exclusivos e muito mais, direto no seu email!  
+          </p>
+
+          <div class="form">
+            <div class="personal-info">
+              <div class="input-group">
+                <label for="name">Nome:</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Digite o seu nome"
+                />
+                <p id="name-error" class="error-message"></p>
+              </div>
+
+              <div class="input-group">
+                <label for="birthdate">Data de nascimento:</label>
+                <input
+                  type="text"
+                  id="birthdate"
+                  name="birthdate"
+                  placeholder="Formato DD/MM/AAAA"
+                />
+                <p id="birthdate-error" class="error-message"></p>
+              </div>
+            </div>
+
+            <div class="personal-info">
+              <div class="input-group">
+                <label for="cpf">CPF:</label>
+                <input
+                  type="text"
+                  id="cpf"
+                  name="cpf"
+                  maxlength="11"
+                  placeholder="Somente números"
+                />
+                <p id="cpf-error" class="error-message"></p>
+              </div>
+
+              <div class="input-group">
+                <label for="phone">Telefone:</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  maxlength="11"
+                  placeholder="DDD + número"
+                />
+                <p id="phone-error" class="error-message"></p>
+              </div>
+            </div>
+
+            <div class="input-group">
+              <label for="email">E-mail:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Seu melhor e-mail ✦"
+              />
+              <p id="email-error" class="error-message"></p>
+            </div>
+
+            <div class="password">
+              <div class="input-group">
+                <label for="password">Senha:</label>
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  placeholder="Mín. 8 caracteres"
+                />
+                <p id="password-error" class="error-message"></p>
+              </div>
+
+              <div class="input-group">
+                <label for="confirm-password">Confirmar senha:</label>
+                <input
+                  type="password"
+                  id="confirm-password"
+                  name="confirm-password"
+                />
+                <p id="confirm-password-error" class="error-message"></p>
+              </div>
+            </div>
+
+            <div class="option-info">
+              <div class="input-group">
+                <label for="frequency">Frequência de envio:</label>
+                <select id="frequency" name="frequency">
+                  <option value="">Selecione a frequência</option>
+                  <option value="monthly">Mensal</option>
+                  <option value="biweekly">Quinzenal</option>
+                  <option value="weekly">Semanal</option>
+                </select>
+                <p id="frequency-error" class="error-message"></p>
+              </div>
+
+              <div class="input-group">
+                <label for="bias">Quem é o seu bias no XH?</label>
+                <select id="bias" name="bias">
+                  <option value="">Selecione o seu bias</option>
+                  <option value="gunil">Gunil</option>
+                  <option value="jungsu">Jungsu</option>
+                  <option value="gaon">Gaon</option>
+                  <option value="ode">O.de</option>
+                  <option value="junhan">Junhan</option>
+                  <option value="jooyeon">Jooyeon</option>
+                  <option value="more">Mais de um</option>
+                  <option value="all">Todos</option>
+                  <option value="none">Não tenho</option>
+                </select>
+                <p id="bias-error" class="error-message"></p>
+              </div>
+            </div>
+            <div class="input-group checkbox-group">
+            <label for="privacy">
+              <input type="checkbox" id="privacy" name="privacy" />
+              Li e aceito a
+              <a href="#" target="_blank" class="link"
+                >Política de Privacidade</a
+              >.
+            </label>
+            <p id="privacy-error" class="error-message"></p>
+          </div>
+          </div>
+
+          
+
+          <button type="submit">Me inscrever agora ✦</button>
+        </form>
+      </div>
+    </main>
+    <div id="toast"></div>
+    <script src="script.js"></script>
+  </body>
+</html>

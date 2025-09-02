@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+
+:root {
+
+    --font-primary: "Instrument Sans", sans-serif;
+    --font-highlight: "Afacad", sans-serif;
+ 
+    --color-accent: #9747FF;   
+    --color-text: #ffffff;       
+
+}
+
+* {
+    padding: 0; 
+    margin: 0;  
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100vh;
+    margin: 0;
+
+    
+}
+
+body {
+    background: url(/images/background-img\ \(2\).png) no-repeat center center / cover fixed;
+}
+
+/*TITLE*/
+
+#title {
+    color: white;
+    text-align: center;
+    font-size: 2.8rem;
+    font-family: var(--font-highlight);
+    padding-top: 40px;
+    
+}
+
+.highlight {
+    color: var(--color-accent)
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*FORM*/
+
+.form-container {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: rgba(29,29,29,0.92);
+    width: 65%;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 0px var(--color-accent);
+              
+}
+
+.form-image {
+    width:100%;        
+    height: auto;   
+    object-fit: cover;     
+    border-radius: 10px;   
+
+}
+
+form {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap:12px; 
+  font-family: var(--font-primary);
+  color: var(--color-text);
+}
+
+.paragraph {
+    text-align: center;
+    padding: 4px;
+    font-size: 1rem;
+}
+
+.personal-info,
+.password,
+.option-info {
+  display: flex;
+
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column; 
+  flex: 1; 
+  padding: 8px;
+
+}
+
+.input-group > label {
+  font-size: .9rem;
+}
+
+input, select {
+    padding: 4px;
+    border-radius: 5px;
+    font-family: var(--font-primary);
+}
+
+input:focus, select:focus {
+  outline: 2px solid var(--color-accent);
+  border: none;
+}
+
+/*PRIVACY*/
+
+
+
+.link {
+    color: var(--color-text);
+
+}
+
+.link:hover {
+    color: var(--color-accent);
+
+}
+
+input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--color-accent);
+  cursor: pointer;
+}
+
+
+/*SUBMIT*/
+
+button {
+    width: 50%;
+    margin: 0 auto 4px auto;
+    padding: 8px;
+    font-family: var(--font-primary);
+    font-size: 1.1rem;
+    background-color: var(--color-accent);
+    color: var(--color-text);
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: black;
+}
+
+/*ERROR MESSAGE*/ 
+
+.error-message {
+  color: red;
+  font-size: 0.8rem;
+  margin-top: 2px;
+}
+
+/*CONFIRM*/
+
+#toast {
+    position: fixed;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--color-accent);
+    color: var(--color-text);
+    padding: 15px 25px;
+    border-radius: 8px;
+    display: none;      
+    font-family: var(--font-primary);
+    font-weight: bold;
+    z-index: 9999;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.4s, top 0.4s;
+}
+
+#toast.show {
+    display: block;
+    opacity: 1;
+    top: 40px; /
+}
+
+

@@ -51,7 +51,8 @@ const validateBirthdate = (date) => {
 };
 
 const validateCpf = (cpf) => {
-  return cpf.length === 11;
+  const onlyNumbers = cpf.replace(/\D/g, "");
+  return /^\d{11}$/.test(onlyNumbers);
 };
 
 const validatePhone = (phone) => {

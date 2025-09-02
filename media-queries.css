@@ -1,19 +1,4 @@
-@media (max-width: 1024px) {
-
-  
-  .form-container {
-    width: 80%;
-    gap: 15px;
-  }
-
-  form {
-    width: 100%;
-  }
-
-  #title {
-    font-size: 2.2rem;
-  }
-}
+/*TABLET*/
 
 @media (max-width: 1024px) and (orientation: portrait) {
   .form-container {
@@ -23,11 +8,11 @@
   }
 
   .form-image {
-    display: block; 
-    width: 100%;           
-    height: auto;       
+    display: block;
+    width: 100%;
+    height: auto;
     object-fit: cover;
-    margin-bottom: 20px;     
+    margin-bottom: 20px;
   }
 
   form {
@@ -41,10 +26,8 @@
 
 /*MOBILE*/
 @media (max-width: 768px) {
-
-  
-    main {
-    height: auto; 
+  main {
+    height: auto;
   }
 
   .form-container {
@@ -69,7 +52,7 @@
   .personal-info,
   .password,
   .option-info {
-    flex-direction: column; 
+    flex-direction: column;
     gap: 5px;
   }
 
@@ -79,12 +62,8 @@
   }
 
   button {
-
     padding: 6px;
     font-size: 0.9rem;
     background-color: antiquewhite;
-
+  }
 }
-}
-
-

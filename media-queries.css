@@ -1,4 +1,8 @@
 @media (max-width: 1024px) {
+   body {
+    background-attachment: scroll; 
+  }
+  
   .form-container {
     width: 80%;
     gap: 15px;
@@ -15,6 +19,9 @@
 
 /*MOBILE*/
 @media (max-width: 768px) {
+   body {
+    background-attachment: scroll; 
+  }
   
     main {
     height: auto; 

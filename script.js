@@ -40,7 +40,7 @@ const validateBirthdate = (date) => {
   const month = parseInt(match[2], 10);
   const year = parseInt(match[3], 10);
 
-  if (year < 1900) return false;
+  if (year < 1910) return false;
 
   const birthDate = new Date(year, month - 1, day);
   const today = new Date();

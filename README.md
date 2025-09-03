@@ -26,7 +26,6 @@ Este é um formulário de inscrição completo, onde fãs da banda Xdinary Heroe
 - **CSS3**
 - **JavaScript (ES6)**
 
-## 🗂 Estrutura de Arquivos
 
 
 

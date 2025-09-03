@@ -1,6 +1,5 @@
-/*TABLET*/
-
-@media (max-width: 1024px) and (orientation: portrait) {
+/* TABLET VERTICAL */
+@media (min-width: 769px) and (max-width: 1024px) and (orientation: portrait) {
   .form-container {
     flex-direction: column; 
     width: 80%;
@@ -25,7 +24,32 @@
   }
 }
 
-/*MOBILE*/
+/* TABLET HORIZONTAL */
+@media (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
+  .form-container {
+    flex-direction: row; 
+    width: 80%;
+    gap: 15px;
+    margin-bottom: 40px;
+  }
+
+  .form-image {
+    display: block;
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  form {
+    width: 50%;
+  }
+
+  #title {
+    font-size: 2.2rem;
+  }
+}
+
+/* MOBILE */
 @media (max-width: 768px) {
   main {
     height: auto;
@@ -39,7 +63,7 @@
   }
 
   .form-image {
-    display: none; 
+    display: none !important; 
   }
 
   .paragraph {

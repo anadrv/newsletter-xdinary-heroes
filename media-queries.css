@@ -1,18 +1,9 @@
-/* TABLET VERTICAL */
-@media (min-width: 769px) and (max-width: 1024px) and (orientation: portrait) {
+/* TABLET (entre 769px e 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
   .form-container {
+    width: 80%;
     flex-direction: column; 
-    width: 80%;
     gap: 15px;
-    margin-bottom: 40px;
-  }
-
-  .form-image {
-    display: block;
-    width: 80%;
-    height: auto;
-    object-fit: cover;
-    margin-bottom: 20px;
   }
 
   form {
@@ -22,42 +13,25 @@
   #title {
     font-size: 2.2rem;
   }
-}
-
-/* TABLET HORIZONTAL */
-@media (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
-  .form-container {
-    flex-direction: row; 
-    width: 80%;
-    gap: 15px;
-    margin-bottom: 40px;
-  }
 
   .form-image {
-    display: block;
-    width: 50%;
+    display: block; 
+    width: 80%;
     height: auto;
     object-fit: cover;
-  }
-
-  form {
-    width: 50%;
-  }
-
-  #title {
-    font-size: 2.2rem;
+    margin-bottom: 20px;
   }
 }
 
-/* MOBILE */
+/* MOBILE (até 768px) */
 @media (max-width: 768px) {
   main {
-    height: auto;
+    height: auto; 
   }
 
   .form-container {
     flex-direction: column; 
-    width: 80%;
+    width: 70%;
     padding: 16px;
     margin-bottom: 40px;
   }
@@ -77,7 +51,7 @@
   .personal-info,
   .password,
   .option-info {
-    flex-direction: column;
+    flex-direction: column; 
     gap: 5px;
   }
 
@@ -89,5 +63,6 @@
   button {
     padding: 6px;
     font-size: 0.8rem;
+
   }
 }

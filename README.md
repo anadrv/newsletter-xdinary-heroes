@@ -6,11 +6,11 @@ Projeto de uma página de inscrição para uma newsletter fictícia da banda **X
 
 Este é um formulário de inscrição completo, onde fãs da banda Xdinary Heroes podem se cadastrar para receber novidades, conteúdos exclusivos e mais. O projeto é totalmente desenvolvido com HTML, CSS e JavaScript.
 
-## Preview
+## ✦ Preview
 
 ![Preview da página](images/preview-xh.png) 
 
-## Funcionalidades
+## ✦ Funcionalidades
 
 - Coleta de informações pessoais como nome, e-mail, telefone, CPF e data de nascimento.
 - Campos de senha e confirmação de senha.
@@ -20,12 +20,13 @@ Este é um formulário de inscrição completo, onde fãs da banda Xdinary Heroe
 - Validação de todos os campos com mensagens de erro.
 - Layout responsivo (usando `media-queries.css`).
 
-## Tecnologias Utilizadas
+## ✦ Tecnologias Utilizadas
 
 - **HTML5**
 - **CSS3**
 - **JavaScript (ES6)**
 
+✦ Desenvolvido com carinho para os fãs de Xdinary Heroes ✦
 
 
 

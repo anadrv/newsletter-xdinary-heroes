@@ -1,9 +1,10 @@
-/* TABLET (entre 769px e 1024px) */
+/* TABLET */
 @media (min-width: 769px) and (max-width: 1024px) {
   .form-container {
     width: 80%;
     flex-direction: column; 
     gap: 15px;
+    margin-bottom: 50px;
   }
 
   form {
@@ -23,7 +24,7 @@
   }
 }
 
-/* MOBILE (até 768px) */
+/* MOBILE */
 @media (max-width: 768px) {
   main {
     height: auto; 
@@ -31,7 +32,7 @@
 
   .form-container {
     flex-direction: column; 
-    width: 70%;
+    width: 85%;
     padding: 16px;
     margin-bottom: 40px;
   }

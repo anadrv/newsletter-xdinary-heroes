@@ -15,10 +15,14 @@
 
   <body>
     <div class="background">
-      <img src="images/background-img.png" alt="Capa do álbum Beautiful Mind - Xdinary Heroes, versão apenas com a bandeira" />
+      <img
+        src="images/background-img.png"
+        alt="Capa do álbum Beautiful Mind - Xdinary Heroes, versão apenas com a bandeira"
+      />
     </div>
+
     <header>
-      <h1 id="title">
+      <h1 id="title" aria-label="Newsletter da banda Xdinary Heroes">
         <span class="highlight">✦ XDINARY HEROES</span> - NEWSLETTER ✦
       </h1>
     </header>
@@ -28,12 +32,12 @@
         <div class="cover-image">
           <img
             src="images/xdinary-heroes.png"
-            alt="Capa do álbum Beautiful Mind - Xdinary Heroes, todos os intregrantes juntos"
+            alt="Capa do álbum Beautiful Mind - Xdinary Heroes, todos os integrantes juntos"
             class="form-image"
           />
         </div>
 
-        <form id="form">
+        <form id="form" aria-label="Formulário de inscrição na newsletter">
           <p class="paragraph">
             Inscreva-se e receba todas as novidades, conteúdos exclusivos e
             muito mais, direto no seu email!
@@ -48,6 +52,7 @@
                   id="name"
                   name="name"
                   placeholder="Digite o seu nome"
+                  aria-label="Campo para digitar o nome completo"
                 />
                 <p id="name-error" class="error-message"></p>
               </div>
@@ -59,6 +64,7 @@
                   id="birthdate"
                   name="birthdate"
                   placeholder="Formato DD/MM/AAAA"
+                  aria-label="Campo para informar a data de nascimento"
                 />
                 <p id="birthdate-error" class="error-message"></p>
               </div>
@@ -73,6 +79,7 @@
                   name="cpf"
                   maxlength="11"
                   placeholder="Somente números"
+                  aria-label="Campo para digitar o CPF, apenas números"
                 />
                 <p id="cpf-error" class="error-message"></p>
               </div>
@@ -85,6 +92,7 @@
                   name="phone"
                   maxlength="11"
                   placeholder="DDD + número"
+                  aria-label="Campo para informar o número de telefone com DDD"
                 />
                 <p id="phone-error" class="error-message"></p>
               </div>
@@ -97,6 +105,7 @@
                 id="email"
                 name="email"
                 placeholder="Seu melhor e-mail ✦"
+                aria-label="Campo para digitar o endereço de e-mail"
               />
               <p id="email-error" class="error-message"></p>
             </div>
@@ -108,7 +117,8 @@
                   type="password"
                   id="password"
                   name="password"
-                  placeholder="Mín. 8 caracteres"
+                  placeholder="Mínimo 8 caracteres"
+                  aria-label="Campo para digitar a senha"
                 />
                 <p id="password-error" class="error-message"></p>
               </div>
@@ -119,6 +129,7 @@
                   type="password"
                   id="confirm-password"
                   name="confirm-password"
+                  aria-label="Campo para confirmar a senha"
                 />
                 <p id="confirm-password-error" class="error-message"></p>
               </div>
@@ -127,7 +138,11 @@
             <div class="option-info">
               <div class="input-group">
                 <label for="frequency">Frequência de envio:</label>
-                <select id="frequency" name="frequency">
+                <select
+                  id="frequency"
+                  name="frequency"
+                  aria-label="Selecione a frequência de recebimento dos e-mails"
+                >
                   <option value="">Selecione a frequência</option>
                   <option value="monthly">Mensal</option>
                   <option value="biweekly">Quinzenal</option>
@@ -138,7 +153,11 @@
 
               <div class="input-group">
                 <label for="bias">Quem é o seu bias no XH?</label>
-                <select id="bias" name="bias">
+                <select
+                  id="bias"
+                  name="bias"
+                  aria-label="Selecione seu integrante preferido da banda Xdinary Heroes"
+                >
                   <option value="">Selecione o seu bias</option>
                   <option value="gunil">Gunil</option>
                   <option value="jungsu">Jungsu</option>
@@ -153,23 +172,31 @@
                 <p id="bias-error" class="error-message"></p>
               </div>
             </div>
+
             <div class="input-group checkbox-group">
               <label for="privacy">
-                <input type="checkbox" id="privacy" name="privacy" />
+                <input
+                  type="checkbox"
+                  id="privacy"
+                  name="privacy"
+                  aria-label="Confirmar que leu e aceitou a Política de Privacidade"
+                />
                 Li e aceito a
-                <a href="#" target="_blank" class="link"
-                  >Política de Privacidade</a
-                >.
+                <a href="#" target="_blank" class="link">Política de Privacidade</a>.
               </label>
               <p id="privacy-error" class="error-message"></p>
             </div>
           </div>
 
-          <button type="submit">Me inscrever agora ✦</button>
+          <button type="submit" aria-label="Enviar inscrição para a newsletter">
+            Me inscrever agora ✦
+          </button>
         </form>
       </div>
     </main>
-    <div id="toast"></div>
+
+    <div id="toast" aria-live="polite"></div>
+
     <script src="script.js"></script>
   </body>
 </html>

@@ -55,7 +55,7 @@ const validateCpf = (cpf) => {
   return /^\d{11}$/.test(onlyNumbers);
 };
 
-const validatePhone = (phone) => {
+const validatePhoneNumber = (phone) => {
   const regex = /^[1-9]{2}[0-9]{8,9}$/;
   return regex.test(phone);
 };
@@ -116,7 +116,7 @@ form.addEventListener("submit", (e) => {
     isValid = false;
   }
 
-  if (!validatePhone(phoneInput.value)) {
+  if (!validatePhoneNumber(phoneInput.value)) {
     showError("phone-error", "*Telefone inválido (DDD + número)");
     isValid = false;
   }

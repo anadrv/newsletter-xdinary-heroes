@@ -102,7 +102,6 @@ form {
 .password,
 .option-info {
   display: flex;
-
 }
 
 .input-group {
@@ -110,7 +109,6 @@ form {
   flex-direction: column; 
   flex: 1; 
   padding: 8px;
-
 }
 
 .input-group > label {
@@ -129,8 +127,6 @@ input:focus, select:focus {
 }
 
 /*PRIVACY*/
-
-
 
 .link {
     color: var(--color-text);

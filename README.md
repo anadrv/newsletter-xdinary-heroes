@@ -23,6 +23,16 @@ Este é um formulário de inscrição completo, onde fãs da banda Xdinary Heroe
 - Validação de todos os campos com mensagens de erro.
 - Layout responsivo (usando `media-queries.css`).
 
+## ✦ Acessibilidade
+
+O projeto foi desenvolvido com boas práticas de acessibilidade web, garantindo que todos os usuários possam interagir com o formulário de forma eficiente:
+
+- Utilização de aria-label para descrever campos e mensagens de erro, permitindo leitura clara por leitores de tela.
+- Implementação de estados de foco personalizados (:focus) para destacar visualmente os campos ativos ao navegar com o teclado.
+- Estrutura semântica com uso adequado de elementos HTML (<form>, <label>, etc.)
+- Textos e contrastes ajustados para facilitar a leitura.
+- Essas melhorias garantem uma experiência inclusiva, tanto para usuários que utilizam o mouse quanto para aqueles que dependem exclusivamente do teclado ou de tecnologias assistivas.
+
 ## ✦ Tecnologias Utilizadas
 
 - **HTML5**

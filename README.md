@@ -1,4 +1,4 @@
-# ✦ Newsletter - Xdinary Heroes ✦
+.# ✦ Newsletter - Xdinary Heroes ✦
 
 Projeto de uma página de inscrição para uma newsletter fictícia da banda **Xdinary Heroes**, com foco em design responsivo, validação de formulário e uma experiência de usuário agradável.
 
